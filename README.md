@@ -5,7 +5,9 @@ Unlocking onnxruntime to maximize computing abilities of devices on MacOS, silic
 
 
 Available: onnxruntime with CoreML support for intel macs.  
+
 Done: CoreML provider used  
+
 In progress: eGPU used
 
 
