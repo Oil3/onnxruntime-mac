@@ -3,10 +3,11 @@ Unlocking onnxruntime to maximize computing abilities of devices on MacOS, silic
 
 
 ## Silicon
-Not sure yet of what triggered the change in neural engine, but ANE is being used now with CoreML execution provider.
-It seems activity monitor as limited data but it sure is doing something in regards to byte written and the power consumption shown by powermetrics. 
-![image](https://github.com/Oil3/onnxruntime-mac/assets/22565084/ce7fa4b5-8d2f-4bbd-a073-743c0758f73a)
+All computing units up and running!
 
+![ss 2023-12-20 at 6 25 26 AM](https://github.com/Oil3/onnxruntime-mac/assets/22565084/6f046a0a-aa08-4c0b-8756-0632dd734704)
+
+![gpu](https://github.com/Oil3/onnxruntime-mac/assets/22565084/10d043dc-c9f5-47aa-81dd-55ad95ca5831)
 
 
 ## Intel x86
