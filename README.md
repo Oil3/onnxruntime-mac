@@ -2,12 +2,13 @@ I have yet to investigate what those are, but it's very interesting, and I the m
 
 ##Findings and general direction so far:
 
--Onnxruntime actually creates a CoreML .mlmodelc model and basically uses coremltools to run it. Apparently, Pytorch and Tensorflow have a relatively similar behaviour, but I ididn't test it.
--By default, ONNX Runtime always places input(s) and output(s) on CPU: it needs to be specified literaly, ideallh input for input, output for output.
--CoreMLExecutionProvider is incorporated in onnxruntime as CPU only with fails-safe.
--The state of the affair in onnxruntime allow MPS device to be fully accelerated using coremltoolss code, and when there is a fallback to CPU it's without acceleration.
--ANE apple neural engine seems, wtihtout proper benchmarking, nor proper instructions, to be more efficient than A GPU that don't know what it's doing.
--It seems to be as headache giving to code instructions for Metal than configuring some Oracle point of sale, but the benefits will probably motivate someon: CoreImage has to e integreted bringing all needed to manipulate images.
+-Onnxruntime actually creates a CoreML .mlmodelc model and basically uses coremltools to run it. Apparently, Pytorch and Tensorflow have a relatively similar behaviour, but I ididn't test it.  
+
+-By default, ONNX Runtime always places input(s) and output(s) on CPU: it needs to be specified literaly, ideallh input for input, output for output.  
+-CoreMLExecutionProvider is incorporated in onnxruntime as CPU only with fails-safe.  
+-The state of the affair in onnxruntime allow MPS device to be fully accelerated using coremltoolss code, and when there is a fallback to CPU it's without acceleration.  
+-ANE apple neural engine seems, wtihtout proper benchmarking, nor proper instructions, to be more efficient than A GPU that don't know what it's doing.  
+-It seems to be as headache giving to code instructions for Metal than configuring some Oracle point of sale, but the benefits will probably motivate someon: CoreImage has to be integreted bringing all needed to manipulate images.    
 -Apple being Apple as usual, you can only do what's permitted, Windows you can do anything that's not forbidden, and sometimes you'll have to do something forbidden, and Linux allow to _try_ anyhing.
 
 
