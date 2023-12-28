@@ -8,8 +8,7 @@ I have yet to investigate what those are, but it's very interesting, and I the m
 -CoreMLExecutionProvider is incorporated in onnxruntime as CPU only with fails-safe.  
 -The state of the affair in onnxruntime allow MPS device to be fully accelerated using coremltoolss code, and when there is a fallback to CPU it's without acceleration.  
 -ANE apple neural engine seems, wtihtout proper benchmarking, nor proper instructions, to be more efficient than A GPU that don't know what it's doing.  
--It seems to be as headache giving to code instructions for Metal than configuring some Oracle point of sale, but the benefits will probably motivate someon: CoreImage has to be integreted bringing all needed to manipulate images.    
--Apple being Apple as usual, you can only do what's permitted, Windows you can do anything that's not forbidden, and sometimes you'll have to do something forbidden, and Linux allow to _try_ anyhing.
+-Need to code instructions to talk to Metal (all available official apple docs), but I view that as a headache similar to configuring a Oracle point of sale, but the benefits will probably motivate someone: CoreImage, which has to be integreted, has absolutely everything needed to manipulate images. 
 
 
 Confusion between MetalPerformanceShaders and CoreML.
@@ -51,5 +50,9 @@ In progress: eGPU used
 ![Screenshot 2023-12-14 at 4 48 25 AM](https://github.com/Oil3/onnxruntime-mac/assets/22565084/e9aa631c-712c-40be-9d4b-811485155b60)
 
 
-  
+  -------------
+  -Apple: you can only do what's permitted, 
+  Windows: you can do anything what's not forbidden, but sometimes you'll have to do something forbidden to be able to do the former
+  Linux: you can _try_ to do everything, emphasys on try.
+
 
