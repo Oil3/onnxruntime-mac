@@ -1,6 +1,7 @@
 I have yet to investigate what those are, but it's very interesting, and I the more I learn about onnxruntime, the more I see that I still don't knwo.
+edit: simply the model used, converted model. 
 
-##Findings and general direction so far:
+## Findings and general direction so far:
 
 -Onnxruntime actually creates a CoreML .mlmodelc model and basically uses coremltools to run it. Apparently, Pytorch and Tensorflow have a relatively similar behaviour, but I ididn't test it.  
 
