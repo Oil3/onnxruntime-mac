@@ -1,5 +1,5 @@
 I have yet to investigate what those are, but it's very interesting, and I the more I learn about onnxruntime, the more I see that I still don't knwo.
-edit: simply the model used, converted model. 
+edit: simply the model used, converted model, files are in private/var/folders/ mlmodel files are the ones without file extension, onnx model file exploded in different mlmmodels and mlmodelc per class 
 
 ## Findings and general direction so far:
 
