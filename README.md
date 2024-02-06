@@ -1,5 +1,12 @@
+## Key point ## : Since Onnx's CoreML Execution Provider involves a convertion to, and the use of CoreML itself, performance enhancements should be focused on increasing model, ops, code, funtions compability to what CoreML can do. For exemple if inter_cubic interpolation is a no-no, change it to inter_linear.
+
+
+
 I have yet to investigate what those are, but it's very interesting, and I the more I learn about onnxruntime, the more I see that I still don't knwo.
-edit: simply the model used, converted model, files are in private/var/folders/ mlmodel files are the ones without file extension, onnx model file exploded in different mlmmodels and mlmodelc per class 
+edit: simply the model used, converted model, files are in private/var/folders/ mlmodel files are the ones without file extension, onnx model file exploded in different mlmmodels and mlmodelc per class
+edit2: it is the same for pytorch, it is documented _once_ in Apple's documentation, and I believe I read it as well once in onnx docs. Seems noone had a clue.
+edit2: it is the way that has been decided, so using onnxruntime withn coreML execution provider takes your .onnx model, converts it in mlmodel, compiles the mlmodels and then runs it with embeded coreml.
+I don't know yet why we aren't directly using metal as a directx to mps shader converter is availabe to apple devs, but it is what it is and I lack the knowledge to do it myself.
 
 ## Findings and general direction so far:
 
@@ -41,7 +48,6 @@ All computing units up and running!
 
 ## Intel x86
 Available: onnxruntime with CoreML support for intel macs.  
-
 Done: CoreML provider used  
 
 In progress: eGPU used
