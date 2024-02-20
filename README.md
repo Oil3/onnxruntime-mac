@@ -63,3 +63,8 @@ In progress: eGPU used
   Linux: you can _try_ to do everything, emphasys on try.
 
 
+)))))
+
+  coreml_flags |= COREML_FLAG_USE_CPU_ONLY
+
+
